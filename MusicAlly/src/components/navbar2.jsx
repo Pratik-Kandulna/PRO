@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
-function Navbar(){
-  const navigate = useNavigate();
+
+function Navbar2(){
+
   const [open,setOpen] = useState(null);
 
   return(
@@ -17,10 +16,7 @@ function Navbar(){
         </div>
         <ul className="nav-links">
 
-        <div className="home"
-        onClick={() => navigate("/UrHome")}
-        >
-          Home</div>
+        <li>Home</li>
 
         <li 
           className="dropdown"
@@ -30,18 +26,10 @@ function Navbar(){
 
           {open === "discover" && (
             <ul className="dropdown-menu">
-              <li
-              onClick={() => navigate("/TrendNow")}
-              >Trending Now</li>
-              <li
-              onClick={() => navigate("/NewRel")}
-              >New Releases</li>
-              <li
-              onClick={() => navigate("/TopCharts")}
-              >Top Charts</li>
-              <li
-              onClick={() => navigate("/AllGenres")}
-              >Browse All Genres</li>
+              <li>Trending Now</li>
+              <li>New Releases</li>
+              <li>Top Charts</li>
+              <li>Browse All Genres</li>
             </ul>
           )}
 
@@ -82,12 +70,12 @@ function Navbar(){
           <img src="/images/finalsearch.png" alt="Search"/>
         </div>
 
-          <div 
-             className="profile"
-             onClick={() => navigate("/login")}
-            >
+        <div className="profile">
+             <li>
               <img src="/images/profile.png" alt=""/>
-      
+              
+             </li>
+          
           <div
             className="dropdown"
             onClick={()=>setOpen(open === "profile" ? null : "profile")}
@@ -108,4 +96,4 @@ function Navbar(){
   )
 }
 
-export default Navbar
+export default Navbar2

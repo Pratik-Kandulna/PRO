@@ -3,6 +3,7 @@ import './login.css'
 function Login(){
 return(
 <div>
+  <div className='login-conatiner'>
   <div className='logoSpace'>
     <img src="/images/MusicAlly.jpg" alt="MusicAlly Logo"/>
   </div>
@@ -24,6 +25,7 @@ return(
     <a href="#">Forgot Password?</a>
     </div>
 
+  </div>
   </div>
 </div>
 )

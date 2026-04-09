@@ -1,6 +1,7 @@
 import "./UrHome.css";
 
 
+
 function UrHome(){
     
     const  whydata = [
@@ -137,8 +138,7 @@ function UrHome(){
           
 
           {/*  HOME PAGE */}
-           <div className="home-container">
-        
+    <div className="home-container">   
     <section className="hero">
       <div className="hero-container">
         <div className="hero-left">

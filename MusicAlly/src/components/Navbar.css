@@ -14,7 +14,7 @@
   
 .logo img{
     border-radius: 0px;
-    height:clamp(70px, 100vw, 20px);
+    height: clamp(20px, 5vw, 70px);
     width:auto;
     object-fit: contain;
     display: flex;
@@ -24,6 +24,8 @@
 
 .navbar{
   width: 100%;
+  max-width: 100%;
+  
   background: linear-gradient(90deg,rgb(224, 243, 255) 0%, rgb(213, 215, 255) 40%, rgb(230, 202, 255) 98%);
 }
 
@@ -54,6 +56,11 @@
     font-weight:500;
     min-width: 0;
 
+}
+
+.home{
+
+  font-size: large;
 }
 
 .nav-right{
